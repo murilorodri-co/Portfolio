@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/main_logo.ico" type="image/x-icon">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <title>Portfólio | Murilo Rodrigues</title>
+</head>
+<body>
+<div class="container">
+    <!-- --------------- HEADER --------------- -->
+    <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Murilo Rodrigues</p>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link" data-translate="home">Início</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link" data-translate="about">Sobre Mim</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link" data-translate="projects">Projetos</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link" data-translate="contact">Contato</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+        <div class="language-selector">
+            <i class="uil uil-globe" onclick="changeLanguage()" style="cursor: pointer;"></i>
+        </div>
+    </nav>
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+        <!-- -------------- FEATURED BOX ---------------- -->
+        <section class="featured-box" id="home">
+            <div class="featured-text">
+                <div class="featured-name">
+                    <p data-translate="title-primary">Eu sou Desenvolvedor</p>
+                    <span class="typedText"></span>
+                </div>
+                <div class="featured-text-info">
+                    <p data-translate="description-primary">Desenvolvedor full-stack especializado em front-end e back-end. Crio soluções completas com tecnologias como HTML, CSS e JavaScript, garantindo aplicações robustas e eficientes.</p>
+                </div>
+                <div class="featured-text-btn">
+                    <button class="btn blue-btn" data-translate="btnHire">Me Contrate</button>
+                    <a href="docs/Currículo - Murilo Rodrigues.docx" download="Currículo - Murilo Rodrigues">
+                        <button class="btn" data-translate="btnResume">Meu Currículo <i class="uil uil-file-alt"></i></button>
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-icon-box">
+                <a href="#about" class="scroll-btn">
+                    <i class="uil uil-mouse-alt"></i>
+                    <p data-translate="scrollDown">Deslize para Baixo</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- -------------- ABOUT BOX ---------------- -->
+        <section class="section" id="about">
+            <div class="top-header">
+                <h1 data-translate="title-secondary">Sobre Mim</h1>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="about-info">
+                        <h3 data-translate="title-secondary">Sobre Mim</h3>
+                        <p data-translate="description">Sou um desenvolvedor especializado em front-end apaixonado por criar soluções tecnológicas completas e inovadoras. Com experiência sólida em Web-Design, Front e Back-End, tenho a capacidade de transformar ideias em aplicações funcionais e eficientes.</p>
+                        <div class="about-btn">
+                            <a href="docs/Currículo - Murilo Rodrigues.docx" download="Currículo - Murilo Rodrigues">
+                                <button class="btn" data-translate="btnDownloadResume">Baixe meu Currículo <i class="uil uil-import"></i></button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3>Front-End</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Bootstrap</span>
+                            <span>React</span>
+                        </div>
+                    </div>
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3>Back-End</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>JAVA</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- -------------- PROJECT BOX ---------------- -->
+        <section class="section" id="projects">
+            <div class="top-header">
+                <h1 data-translate="title-third">Meus Projetos</h1>
+            </div>
+            <div class="project-container">
+                <a href="http://murilodev.html-5.me/inicio.html" class="project-box">
+                    <img src="img/pizzaria_logo1.svg" alt="" class="project-box_img project-box_img--default">
+                    <img src="img/pizzaria_logo2.svg" alt="" class="project-box_img project-box_img--hover">
+                    <h3>Pizzaria</h3>
+                    <label>Loja Virtual de uma pizzaria</label>
+                </a>
+                <a href="link-para-ecommerce-chocolates" class="project-box">
+                    <img src="img/ecommerce_logo1.svg" alt="" class="project-box_img project-box_img--default">
+                    <img src="img/ecommerce_logo2.svg" alt="" class="project-box_img project-box_img--hover">
+                    <h3>E-Commerce de Chocolates</h3>
+                    <label>Loja Virtual de uma <span>distribuidora de chocolates</span></label>
+                </a>
+                <a href="link-para-projeto-brasil" class="project-box">
+                    <img src="img/brasil_logo1.svg" alt="" class="project-box_img project-box_img--default">
+                    <img src="img/brasil_logo2.svg" alt="" class="project-box_img project-box_img--hover">
+                    <h3>Projeto Geografia do Brasil</h3>
+                    <label>Website sobre a Geografia Brasileira</label>
+                </a>
+            </div>
+        </section>
+
+        <!-- -------------- CONTACT BOX ---------------- -->
+        <section class="section" id="contact">
+            <div class="top-header">
+                <h1 data-translate="title-fourth">Entre em Contato Comigo</h1>
+                <span data-translate="subtitle">Se você está interessado em trabalhar comigo entre em contato</span>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="contact-info">
+                        <h2>Me Encontre <i class="uil uil-corner-right-down"></i></h2>
+                        <p><i class="uil uil-envelope"></i> Email: murilo.corporativo28@gmail.com</p>
+                        <p><i class="uil uil-phone"></i> Tel: 11 95047 3525</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" onsubmit="document.getElementById('toggle-feedback').checked = true;">
+                        <input type="hidden" name="subject" value="Você recebeu uma mensagem de um cliente!">
+                        <input type="hidden" name="from_name" value="Cliente Novo!">
+                        <input type="hidden" name="access_key" value="f6d5640c-e5cb-49e2-88db-af38a57fc504">
+                        <div class="form-control">
+                            <div class="form-inputs">
+                                <input type="text" name="name" class="input-field" placeholder="Nome" required>
+                                <input type="email" name="email" class="input-field" placeholder="Email" required>
+                            </div>
+                            <div class="text-area">
+                                <textarea name="message" placeholder="Mensagem" required></textarea>
+                            </div>
+                            <div class="form-button">
+                                <button type="submit" class="btn">Enviar <i class="uil uil-message"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                    <input type="checkbox" id="toggle-feedback" style="display: none;" />
+                    <div id="feedback-message" class="feedback-message" style="display: none;">
+                        <div class="feedback-message__icon">
+                            <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m13 13h-2v-6h2zm0 4h-2v-2h2zm-1-15c-1.3132 0-2.61358.25866-3.82683.7612-1.21326.50255-2.31565 1.23915-3.24424 2.16773-1.87536 1.87537-2.92893 4.41891-2.92893 7.07107 0 2.6522 1.05357 5.1957 2.92893 7.0711.92859.9286 2.03098 1.6651 3.24424 2.1677 1.21325.5025 2.51363.7612 3.82683.7612 2.6522 0 5.1957-1.0536 7.0711-2.9289 1.8753-1.8754 2.9289-4.4189 2.9289-7.0711 0-1.3132-.2587-2.61358-.7612-3.82683-.5026-1.21326-1.2391-2.31565-2.1677-3.24424-.9286-.92858-2.031-1.66518-3.2443-2.16773-1.2132-.50254-2.5136-.7612-3.8268-.7612z" fill="#393a37"></path>
+                            </svg>
+                        </div>
+                        <div class="feedback-message__title">Mensagem enviada com sucesso!</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p>Murilo Rodrigues</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home" data-translate="home">Início</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about" data-translate="about">Sobre Mim</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects" data-translate="projects">Projetos</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact" data-translate="contact">Contato</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <a href="https://github.com/murilorodri-co" target="_blank"><img src="img/github_logo.svg" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/murilo-rodrigues-8153292b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="img/linkedin_logo.svg" alt="LinkedIn"></a>
+            <a href="https://contate.me/murilorodriguesdev" target="_blank"><img src="img/whatsapp_logo.svg" alt="WhatsApp"></a>
+        </div>
+    </footer>
+</div>
+
+<!-- ----- TYPING JS Link ----- -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<!-- ----- SCROLL REVEAL JS Link----- -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- ----- MAIN JS ----- -->
+<script src="script.js"></script>
+<script>
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        var formData = new FormData(this);
+
+        fetch(this.action, {
+            method: 'POST',
+            body: formData,
+        })
+        .then(response => {
+            showFeedbackMessage('Mensagem enviada com sucesso!', '#fff');
+        })
+        .catch(error => {
+            showFeedbackMessage('Falha ao enviar a mensagem. Por favor, tente novamente.', 'red');
+        });
+    });
+
+    function showFeedbackMessage(message, color) {
+    const feedbackMessage = document.getElementById("feedback-message");
+    feedbackMessage.querySelector(".feedback-message__title").innerText = message;
+
+    feedbackMessage.classList.add('fade-in');
+    feedbackMessage.style.display = 'flex';
+    feedbackMessage.style.opacity = 1;
+
+    setTimeout(() => {
+        feedbackMessage.classList.remove('fade-in');
+        feedbackMessage.classList.add('disappear');
+
+        setTimeout(() => {
+            feedbackMessage.style.display = 'none';
+            feedbackMessage.classList.remove('disappear');
+        }, 500);
+    }, 2000);
+}
+</script>
+<script>
+    let translations = {};
+    let currentLanguage = "pt-br";
+
+    // Função para carregar traduções do arquivo JSON
+    async function loadTranslations() {
+        const response = await fetch('translations.json');
+        translations = await response.json();
+        updateText(); // Atualiza o texto na primeira carga
+    }
+
+    function changeLanguage() {
+        currentLanguage = currentLanguage === "pt-br" ? "en" : "pt-br";
+        updateText();
+    }
+
+    function updateText() {
+        document.querySelectorAll('[data-translate]').forEach(element => {
+            const key = element.getAttribute('data-translate');
+            element.textContent = translations[currentLanguage][key.split('.')[0]][key.split('.')[1]];
+        });
+    }
+
+    // Carrega as traduções ao iniciar a página
+    window.onload = loadTranslations;
+</script>
+
+</body>
+</html>
